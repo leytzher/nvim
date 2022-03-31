@@ -72,4 +72,6 @@ cmd [[
     autocmd BufLeave term://* stopinsert
     ]]
 
-
+--- Gruvbox
+opt.o.background = "dark"
+cmd [[colorscheme gruvbox]]

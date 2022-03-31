@@ -38,3 +38,9 @@ map('n', '<Esc>', '<C-\\><C-n>')                        --- exit
 
 -- nvim-tree keybindings
 map('n', 'nt', [[:NvimTreeToggle<CR>]],{})                  --- toggle nvim-tree using <Leader> + nt
+
+-- telescope keybindings
+map('n','<leader>ff', [[<Cmd>lua require('telescope.builtin').find_files()<CR>]])
+map('n','<leader>fg', [[<Cmd>lua require('telescope.builtin').live_grep()<CR>]])
+map('n','<leader>fb', [[<Cmd>lua require('telescope.builtin').buffers()<CR>]])
+map('n','<leader>fh', [[<Cmd>lua require('telescope.builtin').help_tags()<CR>]])

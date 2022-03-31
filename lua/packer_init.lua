@@ -76,12 +76,22 @@ return packer.startup(function(use)
        run = ":TSUpdate",
    }
 
+    use {
+        'junegunn/fzf', run="./install --bin",
+    }
 
    -- telescope
    use {
        'nvim-telescope/telescope.nvim',
        requires = {{'nvim-lua/plenary.nvim'}}
    }
+
+    -- gruvbox
+    use {
+        "ellisonleao/gruvbox.nvim"
+    }
+
+
 
 
 end)
