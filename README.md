@@ -1,4 +1,4 @@
-# Neovim configuration :rocket
+# Neovim configuration :rocket:
 
 This is my personal Neovim configuration. This is heavily based on Sami's configuration (https://github.com/SamiAlsubhi/nvim.git)
 
