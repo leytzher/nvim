@@ -1,0 +1,1 @@
+--- Nerdtree configuration
