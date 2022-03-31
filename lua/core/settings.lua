@@ -72,5 +72,7 @@ cmd [[
     autocmd BufLeave term://* stopinsert
     ]]
 
---- Gruvbox
-cmd [[colorscheme gruvbox]]
+--- Onedark color theme
+cmd [[colorscheme onedark]]
+
+

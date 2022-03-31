@@ -86,10 +86,6 @@ return packer.startup(function(use)
        requires = {{'nvim-lua/plenary.nvim'}}
    }
 
-    -- gruvbox
-    use {
-        "ellisonleao/gruvbox.nvim"
-    }
 
     use {
         "numToStr/Comment.nvim" -- easily comment stuff
@@ -124,7 +120,15 @@ return packer.startup(function(use)
         "jose-elias-alvarez/null-ls.nvim"  -- for formatters and linters
     }
 
+    use {'ful1e5/onedark.nvim',
+        config = function()
+            require 'core.plugins-config.onedark'.setup{}
+        end,
+    }  -- onedark color theme
 
-
+    use {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+}
 end)
 
