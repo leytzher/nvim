@@ -36,4 +36,5 @@ map('n','<C-l>','<C-w>l')
 map('n', '<C-t>', ':Term<CR>', { noremap = true })      --- use <ctrl> + t to open terminal (instead of :Term)
 map('n', '<Esc>', '<C-\\><C-n>')                        --- exit
 
-
+-- nvim-tree keybindings
+map('n', 'nt', [[:NvimTreeToggle<CR>]],{})                  --- toggle nvim-tree using <Leader> + nt

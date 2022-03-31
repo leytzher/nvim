@@ -72,3 +72,4 @@ cmd [[
     autocmd BufLeave term://* stopinsert
     ]]
 
+

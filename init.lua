@@ -8,4 +8,5 @@
 require('core/settings')
 require('core/keymaps')
 require('packer_init')
+require('core.plugins-config.nvim-treesitter')
 

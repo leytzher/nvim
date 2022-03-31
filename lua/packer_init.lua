@@ -58,10 +58,31 @@ return packer.startup(function(use)
        end
    }
 
-   -- Nerd tree
+   -- nvim-tree
    use {
-        "scrooloose/nerdtree",
+        'kyazdani42/nvim-tree.lua',
+        requires = {
+            'kyazdani42/nvim-web-devicons', -- optional, for file icons
+        },
+        cmd = {"NvimTreeToggle", "NvimTreeClose"},
+        config = function()
+            require 'core.plugins-config.nvim-tree'.setup{}
+        end,
    }
+
+   -- treesitter
+   use {
+       'nvim-treesitter/nvim-treesitter',
+       run = ":TSUpdate",
+   }
+
+
+   -- telescope
+   use {
+       'nvim-telescope/telescope.nvim',
+       requires = {{'nvim-lua/plenary.nvim'}}
+   }
+
 
 end)
 
