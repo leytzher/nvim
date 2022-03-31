@@ -91,6 +91,38 @@ return packer.startup(function(use)
         "ellisonleao/gruvbox.nvim"
     }
 
+    use {
+        "numToStr/Comment.nvim" -- easily comment stuff
+    }
+
+    use {
+        "akinsho/toggleterm.nvim"
+    }
+
+    use {
+        "antoinemadec/FixCursorHold.nvim" -- needed to fix lsp doc highlighting
+    }
+
+    use {
+        "folke/which-key.nvim"
+    }
+
+    -- LSP (Language Server Protocol)
+    use {
+        "neovim/nvim-lspconfig"  -- enable LSP
+    }
+
+    use {
+        "williamboman/nvim-lsp-installer" -- simple language server installer
+    }
+
+    use {
+        "tamago324/nlsp-settings.nvim"  -- language server settings defined in json
+    }
+
+    use {
+        "jose-elias-alvarez/null-ls.nvim"  -- for formatters and linters
+    }
 
 
 

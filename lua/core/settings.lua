@@ -73,5 +73,4 @@ cmd [[
     ]]
 
 --- Gruvbox
-opt.o.background = "dark"
 cmd [[colorscheme gruvbox]]
