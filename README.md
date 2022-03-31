@@ -1,6 +1,8 @@
 # Neovim configuration :rocket:
 
-This is my personal Neovim configuration. This is heavily based on Sami's configuration (https://github.com/SamiAlsubhi/nvim.git)
+This is my personal Neovim configuration.
+
+It is heavily based on Sami's configuration (https://github.com/SamiAlsubhi/nvim.git)
 
 ### Requirements
 - Neovim > 0.5.0
