@@ -22,7 +22,6 @@ opt.encoding = 'utf-8'                              --- set encoding to UTF-8
 opt.number = true					                --- show line number
 opt.relativenumber = true				            --- set relative number
 opt.showmatch = true					            --- highlight matching parenthesis
-opt.foldmethod = 'indent'			            	--- enable folding
 opt.splitright = true					            --- vertical split to the right
 opt.splitbelow = true					            --- horizontal split to the bottom
 opt.ignorecase = true					            --- ignore case letters when search
