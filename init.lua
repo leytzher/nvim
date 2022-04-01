@@ -9,4 +9,5 @@ require('core.plugins-config.whichkey')
 require('core.plugins-config.cmp')
 require('core.plugins-config.lsp')
 require('core.plugins-config.gitsigns')
+require('core.plugins-config.marks')
 

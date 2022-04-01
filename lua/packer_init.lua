@@ -155,6 +155,12 @@ return packer.startup(function(use)
     -- Git signs
     use "lewis6991/gitsigns.nvim"
 
+    -- Marks
+    use "chentau/marks.nvim"
+
+    -- debugger
+    -- use 'mfussenegger/nvim-dap'  -- need debugpy and an adapter configuration
+
     if PACKER_BOOTSTRAP then
         require("packer").sync()
     end
