@@ -26,3 +26,9 @@ On MacOS:
 ```
 brew install fd
 ```
+
+Recommended font (MenloLGS NF Regular):
+```
+https://github.com/romkatv/dotfiles-public/blob/master/.local/share/fonts/NerdFonts/MesloLGS%20NF%20Regular.ttf
+```
+
