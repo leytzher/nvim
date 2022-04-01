@@ -184,6 +184,14 @@ return packer.startup(function(use)
         end,
     }  -- transparent background
 
+    use {"phaazon/hop.nvim",
+        config = function()
+        require("hop").setup({
+                 keys = 'etovxqpdygfblzhckisuran', jump_on_sole_occurrence = false
+            })
+        end,
+    } --- easymotion for nvim
+
     if PACKER_BOOTSTRAP then
         require("packer").sync()
     end

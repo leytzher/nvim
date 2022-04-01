@@ -44,3 +44,11 @@ map('n','<leader>ff', [[<Cmd>lua require('telescope.builtin').find_files()<CR>]]
 map('n','<leader>fg', [[<Cmd>lua require('telescope.builtin').live_grep()<CR>]])
 map('n','<leader>fb', [[<Cmd>lua require('telescope.builtin').buffers()<CR>]])
 map('n','<leader>fh', [[<Cmd>lua require('telescope.builtin').help_tags()<CR>]])
+
+-- hop keybingings
+map('n','<C-h>l',[[:HopLine<CR>]],{})    --- Hop line
+map('n','<C-h>w',[[:HopWord<CR>]],{})    --- Hop word
+map('n','<C-h>c',[[:HopChar1<CR>]],{})    --- Hop 1 character
+map('n','<C-h>cc',[[:HopChar2<CR>]],{})    --- Hop 2 characters
+map('n','<C-h>p',[[:HopPattern<CR>]],{})    --- Hop pattern (similar to /)
+
