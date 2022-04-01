@@ -54,4 +54,5 @@ map('n','<C-h>p',[[:HopPattern<CR>]],{})    --- Hop pattern (similar to /)
 
 -- toggle maximizer
 map('n','<leader>m', [[<Cmd>lua require('maximizer').toggle_maximize()<CR>]])
+map('n','<leader>t', [[:TransparentToggle<CR>]])
 
