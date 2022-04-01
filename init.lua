@@ -7,4 +7,5 @@ require('core.plugins-config.telescope')
 require('core.plugins-config.toggleterm')
 require('core.plugins-config.whichkey')
 require('core.plugins-config.cmp')
+require('core.plugins-config.lsp')
 
