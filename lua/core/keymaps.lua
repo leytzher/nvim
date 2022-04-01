@@ -52,3 +52,6 @@ map('n','<C-h>c',[[:HopChar1<CR>]],{})    --- Hop 1 character
 map('n','<C-h>cc',[[:HopChar2<CR>]],{})    --- Hop 2 characters
 map('n','<C-h>p',[[:HopPattern<CR>]],{})    --- Hop pattern (similar to /)
 
+-- toggle maximizer
+map('n','<leader>m', [[<Cmd>lua require('maximizer').toggle_maximize()<CR>]])
+

@@ -192,6 +192,29 @@ return packer.startup(function(use)
         end,
     } --- easymotion for nvim
 
+    use {"norcalli/nvim-colorizer.lua",
+        config = function()
+        require("colorizer").setup()
+    end
+    } --- nvim-colorizer
+
+    use {"rzksobhy27/maximizer.nvim",
+        config = function()
+        require("maximizer").setup(
+        {
+                    window = "<C-w>",  -- it needs the current navigation keymaps so they can be disabled later
+                    navigate = {
+                        up = "<C-w>k",
+                        down = "<C-w>j",
+                        right = "<C-w>l",
+                        left = "<C-w>h",
+                    }
+                }
+            )
+        end
+    } --- nvim maximizer
+
+
     if PACKER_BOOTSTRAP then
         require("packer").sync()
     end
