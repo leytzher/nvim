@@ -152,6 +152,9 @@ return packer.startup(function(use)
     use  "tamago324/nlsp-settings.nvim"  -- language server settings defined in json
     use "jose-elias-alvarez/null-ls.nvim"  -- for formatters and linters
 
+    -- Git signs
+    use "lewis6991/gitsigns.nvim"
+
     if PACKER_BOOTSTRAP then
         require("packer").sync()
     end
