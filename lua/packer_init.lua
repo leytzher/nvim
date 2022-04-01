@@ -214,6 +214,11 @@ return packer.startup(function(use)
         end
     } --- nvim maximizer
 
+    use {"lukas-reineke/indent-blankline.nvim",
+        config = function()
+            require 'core.plugins-config.indent-blankline'.setup{}
+        end
+    }
 
     if PACKER_BOOTSTRAP then
         require("packer").sync()
