@@ -86,40 +86,13 @@ return packer.startup(function(use)
        requires = {{'nvim-lua/plenary.nvim'}}
    }
 
+    -- comment plugin, terminal plugin and which key plugin
+    use  "numToStr/Comment.nvim" -- easily comment stuff
+    use  "akinsho/toggleterm.nvim"
+    use  "antoinemadec/FixCursorHold.nvim" -- needed to fix lsp doc highlighting
+    use  "folke/which-key.nvim"
 
-    use {
-        "numToStr/Comment.nvim" -- easily comment stuff
-    }
-
-    use {
-        "akinsho/toggleterm.nvim"
-    }
-
-    use {
-        "antoinemadec/FixCursorHold.nvim" -- needed to fix lsp doc highlighting
-    }
-
-    use {
-        "folke/which-key.nvim"
-    }
-
-    -- LSP (Language Server Protocol)
-    use {
-        "neovim/nvim-lspconfig"  -- enable LSP
-    }
-
-    use {
-        "williamboman/nvim-lsp-installer" -- simple language server installer
-    }
-
-    use {
-        "tamago324/nlsp-settings.nvim"  -- language server settings defined in json
-    }
-
-    use {
-        "jose-elias-alvarez/null-ls.nvim"  -- for formatters and linters
-    }
-
+    -- theme
     use {'ful1e5/onedark.nvim',
         config = function()
             require 'core.plugins-config.onedark'.setup{}
@@ -160,15 +133,24 @@ return packer.startup(function(use)
         }
           end}
 
+    --- Autocompletion
     use "hrsh7th/nvim-cmp" -- The completion plugin
     use "hrsh7th/cmp-buffer" -- buffer completions
     use "hrsh7th/cmp-path" -- path completions
     use "hrsh7th/cmp-cmdline" -- cmdline completions
     use "saadparwaiz1/cmp_luasnip" -- snippet completions
+    use "hrsh7th/cmp-nvim-lsp"
+    use "hrsh7th/cmp-nvim-lua"
 
     -- snippets
     use "L3MON4D3/LuaSnip" --snippet engine
     use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+
+    -- LSP (Language Server Protocol)
+    use  "neovim/nvim-lspconfig"  -- enable LSP
+    use  "williamboman/nvim-lsp-installer" -- simple language server installer
+    use  "tamago324/nlsp-settings.nvim"  -- language server settings defined in json
+    use "jose-elias-alvarez/null-ls.nvim"  -- for formatters and linters
 
     if PACKER_BOOTSTRAP then
         require("packer").sync()
