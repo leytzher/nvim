@@ -216,7 +216,7 @@ return packer.startup(function(use)
 
     use {"lukas-reineke/indent-blankline.nvim",
         config = function()
-            require 'core.plugins-config.indent-blankline'.setup{}
+            require 'core.plugins-config.indent-blankline'.setup()
         end
     }
 
