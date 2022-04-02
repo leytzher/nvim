@@ -29,7 +29,6 @@ opt.linebreak = true					            --- wrap on word boundary
 opt.smartcase = true					            --- ignore lowercase for the whole pattern
 opt.linebreak = true					            --- wrap on word boundary
 opt.termguicolors = true				            --- enable 24 bit RGB colors
-g.transparent_enabled = true                        --- enable transparent background
 
 -- Tabs and indentation
 opt.expandtab = true					            --- use spaces instead of tab

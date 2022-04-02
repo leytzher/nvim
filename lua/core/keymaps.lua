@@ -58,3 +58,16 @@ map('n','<leader>m', [[<Cmd>lua require('maximizer').toggle_maximize()<CR>]])
 -- toggle transparency
 map('n','<leader>t', [[:TransparentToggle<CR>]])
 
+-- focus
+map('n','<S-f>t', [[:FocusToggle<CR>]],{silent=true})     -- focus toggle
+map('n','<S-f>m', [[:FocusMaximise<CR>]],{silent=true})     -- focus maximize
+map('n','<S-f>e', [[:FocusEqualise<CR>]],{silent=true})     -- focus equalise
+map('n','<S-f>n', [[:FocusSplitNicely<CR>]],{silent=true})     -- focus split nicely
+map('n','<S-f>h', [[:FocusSplitLeft<CR>]],{silent=true})
+map('n','<S-f>l', [[:FocusSplitRight<CR>]],{silent=true})
+map('n','<S-f>j', [[:FocusSplitDown<CR>]],{silent=true})
+map('n','<S-f>k', [[:FocusSplitUp<CR>]],{silent=true})
+map('n','<S-f>v', [[:FocusMaxOrEqual<CR>]],{silent=true})  --- toggles between split and maximize
+map('n','<S-f>c', [[:FocusSplitCycle<CR>]],{silent=true})
+
+

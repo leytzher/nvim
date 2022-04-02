@@ -200,6 +200,8 @@ return packer.startup(function(use)
     end
     } --- nvim-colorizer
 
+    -- focus
+    use { "beauwilliams/focus.nvim", config = function() require("focus").setup() end }
 
     use {"lukas-reineke/indent-blankline.nvim",
         config = function()
