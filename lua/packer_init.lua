@@ -50,6 +50,8 @@ return packer.startup(function(use)
    -- Add plugins here
    use "wbthomason/packer.nvim"   -- have packer manage itself
 
+   use "norcalli/nvim_utils"   -- neovim utils
+
    -- Autopair
    use {
        'windwp/nvim-autopairs',
@@ -198,21 +200,6 @@ return packer.startup(function(use)
     end
     } --- nvim-colorizer
 
-    use {"rzksobhy27/maximizer.nvim",
-        config = function()
-        require("maximizer").setup(
-        {
-                    window = "<C-w>",  -- it needs the current navigation keymaps so they can be disabled later
-                    navigate = {
-                        up = "<C-w>k",
-                        down = "<C-w>j",
-                        right = "<C-w>l",
-                        left = "<C-w>h",
-                    }
-                }
-            )
-        end
-    } --- nvim maximizer
 
     use {"lukas-reineke/indent-blankline.nvim",
         config = function()
