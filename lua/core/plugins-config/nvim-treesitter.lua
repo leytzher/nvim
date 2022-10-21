@@ -8,7 +8,7 @@ if not status_ok then
 end
 
 configs.setup {
-    ensure_installed = "maintained",
+    ensure_installed = maintained,
     sync_install = false,
     ignore_install = { "" },
     highlight = {

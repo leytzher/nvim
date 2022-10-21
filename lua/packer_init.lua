@@ -158,7 +158,7 @@ return packer.startup(function(use)
     use "lewis6991/gitsigns.nvim"
 
     -- Marks
-    use "chentau/marks.nvim"
+    use "chentoast/marks.nvim"
 
     use "lewis6991/impatient.nvim"
 
